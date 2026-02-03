@@ -16,4 +16,4 @@ Tech Stack "
 
 Persiapan & Instalasi
 1. Clone Repository & Install Dependencies:
-2. Konfigurasi Database: Pastikan koneksi database di file config sudah benar (Host, User, Password, DB Name).
+2. Konfigurasi Database: Pastikan koneksi database, rename .env.example sesuaikan dengan konfigurasi database lokal
