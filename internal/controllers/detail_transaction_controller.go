@@ -37,7 +37,6 @@ func (ctrl *DetailTransactionController) Saldo(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"status": "success",
 		"data": gin.H{
-			"id":               transaction.ID,
 			"transaction_type": transaction.TransactionType,
 			"amount":           transaction.Amount,
 			"current_balance":  user.Balanced, // Menampilkan balance saja
