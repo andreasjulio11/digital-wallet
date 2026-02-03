@@ -39,7 +39,7 @@ func (ctrl *DetailTransactionController) Saldo(c *gin.Context) {
 		"data": gin.H{
 			"transaction_type": transaction.TransactionType,
 			"amount":           transaction.Amount,
-			"current_balance":  user.Balanced, // Menampilkan balance saja
+			"current_balance":  user.Balanced,
 			"created_at":       transaction.CreatedAt,
 		},
 	})
