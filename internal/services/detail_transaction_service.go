@@ -13,7 +13,7 @@ type DetailTransactionService struct {
 
 func (s *DetailTransactionService) CreateTransaction(userID int, amount float64, typeTranscation string) (models.DetailTransaction, error) {
 	if amount < 0 || amount == 0 || amount == -0 {
-		return models.DetailTransaction{}, errors.New("Pastikan kembali saldo anda")
+		return models.DetailTransaction{}, errors.New("Pastikan Kembali Jumlah Transaksi anda")
 	}
 
 	transaction := s.DetailTransactionRepository.GetDB().Begin()
