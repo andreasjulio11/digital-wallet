@@ -80,6 +80,9 @@ func (ctrl *UserController) Profile(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{
 		"status": "success",
-		"data":   user,
+		"data": gin.H{
+			"name":  user.Name,
+			"saldo": user.Balanced,
+		},
 	})
 }
