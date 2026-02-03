@@ -1,0 +1,9 @@
+# Jangan upload file binary/exe
+*.exe
+main
+
+# Jangan upload file environment (Password DB/JWT Secret)
+.env
+
+# Jangan upload folder vendor (berat)
+vendor/
